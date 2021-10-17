@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Mem Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="slider-wrapper">
+    <div class="slider">
+      <input class="slider__input" type="radio" id="slide-1" name="slider" aria-hidden="true" hidden="" checked="checked">
+      <div class="slider__item">
+        <img src="./assets/img/slide1.jpg" alt="slide 1" class="slider__image">
+      </div>
+      <input class="slider__input" type="radio" id="slide-2" name="slider" aria-hidden="true" hidden="">
+      <div class="slider__item">
+        <img src="./assets/img/slide2.jpg" alt="slide 2" class="slider__image">
+      </div>
+      <input class="slider__input" type="radio" id="slide-3" name="slider" aria-hidden="true" hidden="">
+      <div class="slider__item">
+        <img src="./assets/img/slide3.jpg" alt="slide 3" class="slider__image">
+      </div>
+      <input class="slider__input" type="radio" id="slide-4" name="slider" aria-hidden="true" hidden="">
+      <div class="slider__item">
+        <img src="./assets/img/slide4.jpg" alt="slide 4" class="slider__image">
+      </div>
+      <input class="slider__input" type="radio" id="slide-5" name="slider" aria-hidden="true" hidden="">
+      <div class="slider__item">
+        <img src="./assets/img/slide5.jpg" alt="slide 5" class="slider__image">
+      </div>
+      <input class="slider__input" type="radio" id="slide-6" name="slider" aria-hidden="true" hidden="">
+      <div class="slider__item">
+        <img src="./assets/img/slide6.jpg" alt="slide 6" class="slider__image">
+      </div>
+      <label for="slide-1" class="slider__text slider__text-1">Самый надёжный план: "Фигня, там на месте разберёмся!"</label>
+      <label for="slide-2" class="slider__text slider__text-2">Если ты попробуешь, у тебя есть два варианта: получится или не получится. А если ты не попробуешь, то есть всего один вариант.</label>
+      <label for="slide-3" class="slider__text slider__text-3">Вижу цель, не вижу препятствий!</label>
+      <label for="slide-4" class="slider__text slider__text-4">Все победы начинаются с победы над самим собой.</label>
+      <label for="slide-5" class="slider__text slider__text-5">Учись делать все раньше, учись прилагать усилия, учись наслаждаться результатами.</label>
+      <label for="slide-6" class="slider__text slider__text-6">Приятны завершенные труды.</label>
+      <ol class="slider__dots">
+        <li class="slider__dot">
+          <label for="slide-1" class="slider__bullet slider__bullet-1"></label>
+        </li>
+        <li class="slider__dot">
+          <label for="slide-2" class="slider__bullet slider__bullet-2"></label>
+        </li>
+        <li class="slider__dot">
+          <label for="slide-3" class="slider__bullet slider__bullet-3"></label>
+        </li>
+        <li class="slider__dot">
+          <label for="slide-4" class="slider__bullet slider__bullet-4"></label>
+        </li>
+        <li class="slider__dot">
+          <label for="slide-5" class="slider__bullet slider__bullet-5"></label>
+        </li>
+        <li class="slider__dot">
+          <label for="slide-6" class="slider__bullet slider__bullet-6"></label>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <audio
+    src="./assets/audio/sound.mp3"
+    autoplay
+    loop>
+    Ваш браузер не поддерживает элемент <code>audio</code>.
+  </audio>
+</body>
+</html>
