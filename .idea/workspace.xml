@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71e60e3f-9ab7-48f2-884c-d96996853a74" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cssMemSlider/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssMemSlider/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1ze0VcFfgmyP9TWoRyYMNh9ZrGE" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71e60e3f-9ab7-48f2-884c-d96996853a74" name="Default Changelist" comment="" />
+      <created>1634493273632</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634493273632</updated>
+    </task>
+    <servers />
+  </component>
+</project>
