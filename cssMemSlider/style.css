@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.slider-wrapper {
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ABD4D4;
+}
+
+.slider {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.slider__item {
+  width: 100%;
+  flex: 0 1 100%;
+  /*padding: 3%;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 10px;*/
+  display: none;
+}
+
+.slider__input:checked + .slider__item {
+  display: block;
+  animation: fade-in 1s;
+}
+
+.slider__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #6B9EA1;
+  border-radius: 10px;
+}
+
+.slider__text {
+  display: none;
+  flex: 1 0 calc(100% - 230px);
+}
+
+#slide-1:checked ~ .slider__text-1,
+#slide-2:checked ~ .slider__text-2,
+#slide-3:checked ~ .slider__text-3,
+#slide-4:checked ~ .slider__text-4,
+#slide-5:checked ~ .slider__text-5,
+#slide-6:checked ~ .slider__text-6 {
+  display: block;
+  animation: fade-in 1s;
+}
+
+.slider__dots {
+  flex: 1 0 230px;
+  display: flex;
+  column-gap: 10px;
+  width: 230px;
+  list-style: none;
+}
+
+.slider__dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.slider__dot:hover {
+  cursor: pointer;
+}
+
+.slider__bullet {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #6B9EA1;
+  border-radius: 50%;
+  border: 3px solid #6B9EA1;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.slider__dot:hover .slider__bullet {
+  cursor: pointer;
+  background-color: white;
+}
+
+.slider__dot:active .slider__bullet {
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+#slide-1:checked ~ .slider__dots .slider__bullet-1,
+#slide-2:checked ~ .slider__dots .slider__bullet-2,
+#slide-3:checked ~ .slider__dots .slider__bullet-3,
+#slide-4:checked ~ .slider__dots .slider__bullet-4,
+#slide-5:checked ~ .slider__dots .slider__bullet-5,
+#slide-6:checked ~ .slider__dots .slider__bullet-6 {
+  background-color: transparent;
+}
+
+.slider__input:checked ~ .slider__dots .slider__dot:hover .slider__bullet {
+  border: 3px solid white;
+}
+
+.slider__input:checked ~ .slider__dots .slider__dot:active .slider__bullet {
+  border: 3px solid gainsboro;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
