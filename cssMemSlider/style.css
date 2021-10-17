@@ -126,6 +126,20 @@ body {
   border: 3px solid gainsboro;
 }
 
+@media (max-width: 1024px) {
+  .slider__text {
+    order: 2;
+    flex: 1 0 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .slider__dots {
+    flex: 1 0 100%;
+    justify-content: center;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
